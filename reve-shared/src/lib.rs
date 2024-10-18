@@ -138,7 +138,7 @@ impl Video {
                 "-o",
                 &output_path,
                 "-n",
-                "realesr-animevideov3-x2",
+                format!("realesr-animevideov3-x{}", self.upscale_ratio).as_str(),
                 "-s",
                 &self.upscale_ratio.to_string(),
                 "-f",
